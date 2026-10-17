@@ -2,38 +2,40 @@
 
 ## ZoyaSofts Industry-Ready Internship Project
 
+**Project Title:** Local Healthcare Accessibility Analysis  
+**Project Domain:** Healthcare Data Analytics  
 **Project Type:** Data Analytics and Business Intelligence  
-**Project Domain:** Healthcare  
-**Project Duration:** 14 Days  
-**Prepared by:** Sakshi Patil  
-**College:** D. R. Mane Mahavidyalaya, Kagal
+**Organization:** ZoyaSofts  
+**College:** D. R. Mane Mahavidyalaya, Kagal  
+**Prepared By:** Sakshi Patil  
+**Project Duration:** 14 Days
 
 ---
 
 ## 1. Project Overview
 
-The **Local Healthcare Accessibility Analysis** project focuses on analyzing publicly available information about healthcare facilities to understand their distribution, specialties, ratings, consultation ranges, opening hours, and emergency service availability.
+The Local Healthcare Accessibility Analysis project focuses on analyzing publicly available information about healthcare facilities. It explores facility distribution, specialties, public ratings, review counts, opening hours, consultation price ranges, and emergency service availability.
 
-The project uses data analytics and business intelligence techniques to organize, clean, analyze, and visualize healthcare facility information.
+The project follows a data analytics workflow using SQL, Python, data visualization, and Power BI to organize and present healthcare facility information.
 
-**Note:** This project uses publicly available healthcare facility information only. It does not contain patient records or private medical information.
+**Privacy Note:** This project uses publicly available healthcare facility information and does not include patient records or private medical information.
 
 ## 2. Project Objectives
 
 - Analyze healthcare facilities by facility type.
-- Understand healthcare facility distribution across different areas.
-- Examine publicly listed ratings and review counts.
-- Explore available specialties and opening hours.
+- Explore healthcare facility distribution across different areas.
+- Examine publicly listed facility ratings and review counts.
+- Review available specialties and opening hours.
 - Analyze publicly listed consultation price ranges.
-- Identify facilities that publicly list emergency services.
-- Present the analysis through charts and a Power BI dashboard.
-- Develop data-based observations that may support future healthcare information and management solutions.
+- Explore recorded emergency service availability.
+- Create charts and a Power BI dashboard.
+- Present observations and recommendations based on the available dataset.
 
 ## 3. Dataset Information
 
 The dataset contains **100 records and 10 columns**.
 
-| Facility Type | Number of Records |
+| Facility Type | Number of Facilities |
 |---|---:|
 | Hospitals | 50 |
 | Clinics | 25 |
@@ -42,26 +44,25 @@ The dataset contains **100 records and 10 columns**.
 
 ### Dataset Columns
 
-- `Sr_no`
-- `Facility_Type`
-- `Facility_Name`
-- `Area`
-- `Speciality`
-- `Opening_hours`
-- `Public_rating`
-- `Review_count`
-- `Publicly_listed_consultation_range`
-- `Emergency_availability`
-
-Missing information is represented as `Not Available` where applicable in the dataset.
+1. `Sr_no`
+2. `Facility_Type`
+3. `Facility_Name`
+4. `Area`
+5. `Speciality`
+6. `Opening_hours`
+7. `Public_rating`
+8. `Review_count`
+9. `Publicly_listed_consultation_range`
+10. `Emergency_availability`
 
 ## 4. Tools and Technologies
 
-- **Excel / CSV:** Dataset storage and inspection
+- **Excel:** Dataset inspection and organization
+- **CSV:** Structured dataset storage
 - **PostgreSQL / SQL:** Data querying and analysis
-- **Python:** Data analysis
+- **Python:** Data analysis and preprocessing
 - **Matplotlib:** Data visualization
-- **Power BI:** Interactive dashboard and business intelligence
+- **Power BI:** Dashboard creation and business intelligence
 
 ## 5. Project Workflow
 
@@ -76,63 +77,60 @@ Missing information is represented as `Not Available` where applicable in the da
 9. Business Insights and Recommendations
 10. Project Documentation
 
-## 6. Analysis and Visualizations
+## 6. Data Analysis and Visualizations
 
-The project explores the following analysis areas:
+### 6.1 Facility Type-wise Distribution
 
-1. Facility Type-wise Count
-2. Area-wise Facility Distribution
-3. Facility Name-wise Count or Comparison
-4. Facility Rating Analysis
-5. Review Count Analysis
-6. Opening Hours Analysis
-7. Area-wise Average Rating
-8. Consultation Range Analysis
-9. Emergency Availability Analysis
+Analyzes the distribution of hospitals, clinics, and diagnostic centers in the dataset.
+
+### 6.2 Area-wise Healthcare Facility Distribution
+
+Explores the number of healthcare facilities recorded across different areas.
+
+### 6.3 Facility Name-wise Comparison
+
+Provides a comparison of healthcare facilities by their names.
+
+### 6.4 Healthcare Facility Rating Analysis
+
+Examines the publicly listed ratings of healthcare facilities.
+
+### 6.5 Public Review Count Analysis
+
+Analyzes publicly listed review counts for the facilities.
+
+### 6.6 Healthcare Facility Opening Hours
+
+Explores the opening hours recorded for healthcare facilities.
+
+### 6.7 Area-wise Average Rating
+
+Compares average public ratings across different areas, where sufficient valid rating data is available.
+
+### 6.8 Consultation Range Analysis
+
+Examines publicly listed consultation price ranges.
+
+### 6.9 Emergency Service Availability
+
+Analyzes the recorded emergency service availability information.
 
 ## 7. Power BI Dashboard
 
-The Power BI dashboard presents healthcare facility information through visualizations and summary indicators.
+The Power BI dashboard presents the healthcare facility dataset using summary indicators and visualizations.
 
-Dashboard preview:
+### Dashboard Preview
 
 ![Power BI Dashboard](powerbidashboard.png)
 
-Additional dashboard screenshots:
+### Additional Dashboard View
 
-![Dashboard Screenshot](powerbi.png)
+![Power BI Dashboard View](powerbi.png)
 
-![Dashboard Screenshot](powerbi1.png)
+![Power BI Dashboard View](powerbi1.png)
 
-## 8. Project Files
+## 8. Project Charts
 
-- [Dataset - Excel](Local_Healthcare_data.xlsx)
-- [Dataset - CSV](Local_healthcare.csv.csv)
-- [SQL Queries](Local_healthcare%20query.sql)
-- [Python Analysis Code](new%20Healthcare_Analysis.py)
-- [Power BI Dashboard File](new%20dashboard..pbix)
-- [Internship Documentation](Internship%20Documentation.docx)
+The repository contains the following chart image files. The titles below describe their intended analysis; the exact image-to-title match should be checked against each chart.
 
-## 9. Expected Business Value
-
-The analysis can help organize publicly available healthcare facility information and make it easier to explore facility types, locations, specialties, ratings, and listed services.
-
-The findings may help inform future healthcare information dashboards or facility discovery solutions. Any business opportunity or service gap should be validated with additional research before making operational decisions.
-
-## 10. Limitations
-
-- The analysis is based on the collected dataset and its available fields.
-- Public ratings and review counts may change over time.
-- Missing or unlisted information cannot be treated as proof that a service does not exist.
-- The dataset alone does not establish actual patient demand or prove a healthcare service gap.
-- Findings should be interpreted within the limits of the available data.
-
-## 11. Conclusion
-
-This project demonstrates a data analytics workflow for examining publicly available healthcare facility information using SQL, Python, data visualization, and Power BI. It provides a structured way to explore facility distribution and listed service information.
-
----
-
-**Project:** Local Healthcare Accessibility Analysis  
-**Organization:** ZoyaSofts  
-**Author:** Sakshi Patil
+### Facility Type-wise Distribution
