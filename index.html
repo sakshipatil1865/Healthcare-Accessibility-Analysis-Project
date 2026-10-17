@@ -1,0 +1,317 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Healthcare Accessibility Analysis | Sakshi Patil</title>
+<style>
+:root {
+  --navy: #102b46;
+  --blue: #087eaf;
+  --teal: #13a89e;
+  --light: #f2f7fb;
+  --text: #24364b;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--light);
+  color: var(--text);
+  line-height: 1.7;
+}
+header {
+  background: linear-gradient(120deg, #102b46, #087eaf);
+  color: white;
+  padding: 70px 20px 60px;
+  text-align: center;
+}
+header .tag {
+  display: inline-block;
+  padding: 5px 14px;
+  border: 1px solid #ffffff70;
+  border-radius: 30px;
+  font-size: 13px;
+}
+header h1 {
+  max-width: 900px;
+  margin: 20px auto 10px;
+  font-size: clamp(30px, 5vw, 48px);
+  line-height: 1.2;
+}
+header p { max-width: 700px; margin: 12px auto; }
+nav {
+  background: var(--navy);
+  padding: 14px 12px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+nav a:hover { color: #69e2d7; }
+main { width: min(1100px, 92%); margin: auto; }
+section {
+  margin: 28px 0;
+  padding: clamp(20px, 4vw, 36px);
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 5px 22px #1638580b;
+  scroll-margin-top: 75px;
+}
+h2 { color: var(--navy); margin-top: 0; }
+h3 { margin-top: 8px; }
+.subtitle { color: #63768b; }
+.stats, .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 18px;
+}
+.stat, .tile {
+  padding: 22px;
+  border-radius: 12px;
+  background: #edf7fc;
+  border: 1px solid #e1edf5;
+}
+.stat strong {
+  display: block;
+  font-size: 32px;
+  color: var(--blue);
+}
+.tile h3 { color: var(--blue); }
+.btn {
+  display: inline-block;
+  padding: 10px 17px;
+  border-radius: 8px;
+  background: var(--blue);
+  color: white;
+  text-decoration: none;
+  margin: 5px 5px 5px 0;
+  font-weight: bold;
+}
+.btn:hover { background: var(--navy); }
+.btn.secondary { background: #e4f6f3; color: #126b65; }
+.preview {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+}
+.preview figure { margin: 0; }
+.preview img {
+  width: 100%;
+  height: 190px;
+  object-fit: contain;
+  background: #f3f6f9;
+  border: 1px solid #e1e8ef;
+  border-radius: 10px;
+}
+figcaption { font-size: 14px; padding: 8px 2px; }
+.file-list { padding-left: 20px; }
+.file-list li { margin: 10px 0; }
+.note {
+  padding: 14px 18px;
+  border-left: 4px solid var(--teal);
+  background: #effaf8;
+  border-radius: 5px;
+}
+footer {
+  margin-top: 50px;
+  padding: 30px 18px;
+  text-align: center;
+  background: var(--navy);
+  color: white;
+}
+footer p { margin: 4px; }
+@media(max-width:600px) {
+  nav { gap: 12px; }
+  nav a { font-size: 12px; }
+  header { padding: 48px 16px; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <span class="tag">ZOYASOFTS · INDUSTRY-READY INTERNSHIP</span>
+  <h1>Local Healthcare Accessibility Analysis</h1>
+  <p>Using SQL, Python and Power BI to explore healthcare facilities,
+  public ratings, specialties and service availability.</p>
+  <p><strong>Project by Sakshi Patil</strong></p>
+  <a class="btn secondary" href="#about">Explore Project</a>
+  <a class="btn" href="#dashboard">View Dashboard</a>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#dataset">Dataset</a>
+  <a href="#tools">Tools</a>
+  <a href="#dashboard">Dashboard</a>
+  <a href="#charts">Charts</a>
+  <a href="#files">Project Files</a>
+  <a href="#insights">Insights</a>
+</nav>
+
+<main>
+
+<section id="about">
+  <h2>About the Project</h2>
+  <p>
+    This project examines publicly listed healthcare facility information
+    to understand the distribution and availability of hospitals, clinics
+    and diagnostic centers across recorded areas of Kolhapur.
+  </p>
+  <p>
+    The analysis covers facility types, specialties, opening hours,
+    public ratings, review counts, listed consultation ranges and
+    emergency availability.
+  </p>
+  <div class="note">
+    <strong>Project objective:</strong> Convert collected data into useful
+    insights that may support better understanding of local healthcare
+    services and potential digital technology opportunities.
+  </div>
+</section>
+
+<section id="dataset">
+  <h2>Dataset Overview</h2>
+  <p class="subtitle">Summary of the collected project dataset.</p>
+  <div class="stats">
+    <div class="stat"><strong>100</strong>Total Records</div>
+    <div class="stat"><strong>50</strong>Hospitals</div>
+    <div class="stat"><strong>25</strong>Clinics</div>
+    <div class="stat"><strong>25</strong>Diagnostic Centers</div>
+  </div>
+  <p>
+    The dataset contains 100 records and 10 columns. These figures describe
+    the collected dataset and do not represent every healthcare provider
+    in the region.
+  </p>
+</section>
+
+<section id="tools">
+  <h2>Tools & Technologies</h2>
+  <div class="grid">
+    <div class="tile">
+      <h3>Excel / CSV</h3>
+      <p>Dataset organization and storage.</p>
+    </div>
+    <div class="tile">
+      <h3>PostgreSQL / SQL</h3>
+      <p>Database queries, record counts and grouped analysis.</p>
+    </div>
+    <div class="tile">
+      <h3>Python</h3>
+      <p>Exploratory data analysis and analytical summaries.</p>
+    </div>
+    <div class="tile">
+      <h3>Matplotlib</h3>
+      <p>Charts and data visualization.</p>
+    </div>
+    <div class="tile">
+      <h3>Power BI</h3>
+      <p>Dashboard design and visual reporting.</p>
+    </div>
+  </div>
+</section>
+
+<section id="dashboard">
+  <h2>Power BI Dashboard</h2>
+  <p>
+    Explore the dashboard preview created for the healthcare facility
+    analysis project.
+  </p>
+  <figure>
+    <a href="powerbidashboard.png" target="_blank">
+      <img src="powerbidashboard.png"
+           alt="Healthcare analysis Power BI dashboard"
+           style="width:100%;border-radius:12px;border:1px solid #dbe5ee">
+    </a>
+    <figcaption>Power BI dashboard preview. Select the image to enlarge it.</figcaption>
+  </figure>
+  <p>
+    <a class="btn" href="new%20dashboard..pbix" download>
+      Open / Download Power BI File
+    </a>
+  </p>
+</section>
+
+<section id="charts">
+  <h2>Power BI Chart Gallery</h2>
+  <p class="subtitle">
+    Select a chart to view its full-size image.
+  </p>
+  <div class="preview">
+    <figure><a href="powerbi.png" target="_blank"><img src="powerbi.png" alt="Power BI chart 1"></a><figcaption>Chart 1</figcaption></figure>
+    <figure><a href="powerbi1.png" target="_blank"><img src="powerbi1.png" alt="Power BI chart 2"></a><figcaption>Chart 2</figcaption></figure>
+    <figure><a href="powerbi2.png" target="_blank"><img src="powerbi2.png" alt="Power BI chart 3"></a><figcaption>Chart 3</figcaption></figure>
+    <figure><a href="powerbi3.png" target="_blank"><img src="powerbi3.png" alt="Power BI chart 4"></a><figcaption>Chart 4</figcaption></figure>
+    <figure><a href="powerbi4.png" target="_blank"><img src="powerbi4.png" alt="Power BI chart 5"></a><figcaption>Chart 5</figcaption></figure>
+    <figure><a href="powerbi5.png" target="_blank"><img src="powerbi5.png" alt="Power BI chart 6"></a><figcaption>Chart 6</figcaption></figure>
+    <figure><a href="powerbi6.png" target="_blank"><img src="powerbi6.png" alt="Power BI chart 7"></a><figcaption>Chart 7</figcaption></figure>
+    <figure><a href="powerbi7.png" target="_blank"><img src="powerbi7.png" alt="Power BI chart 8"></a><figcaption>Chart 8</figcaption></figure>
+    <figure><a href="powerbi8.png" target="_blank"><img src="powerbi8.png" alt="Power BI chart 9"></a><figcaption>Chart 9</figcaption></figure>
+    <figure><a href="powerbi9.png" target="_blank"><img src="powerbi9.png" alt="Power BI chart 10"></a><figcaption>Additional dashboard view 10</figcaption></figure>
+    <figure><a href="powerbi10.png" target="_blank"><img src="powerbi10.png" alt="Power BI chart 11"></a><figcaption>Additional dashboard view 11</figcaption></figure>
+    <figure><a href="powerbi11.png" target="_blank"><img src="powerbi11.png" alt="Power BI chart 12"></a><figcaption>Additional dashboard view 12</figcaption></figure>
+    <figure><a href="powerbi12.png" target="_blank"><img src="powerbi12.png" alt="Power BI chart 13"></a><figcaption>Additional dashboard view 13</figcaption></figure>
+    <figure><a href="powerbi13.png" target="_blank"><img src="powerbi13.png" alt="Power BI chart 14"></a><figcaption>Additional dashboard view 14</figcaption></figure>
+    <figure><a href="powerbi14.png" target="_blank"><img src="powerbi14.png" alt="Power BI chart 15"></a><figcaption>Additional dashboard view 15</figcaption></figure>
+    <figure><a href="powerbi15.png" target="_blank"><img src="powerbi15.png" alt="Power BI chart 16"></a><figcaption>Additional dashboard view 16</figcaption></figure>
+  </div>
+</section>
+
+<section id="files">
+  <h2>Project Files</h2>
+  <p>Open the project resources stored in this repository.</p>
+  <ul class="file-list">
+    <li><a href="Local_Healthcare_data.xlsx">Healthcare Dataset (Excel)</a></li>
+    <li><a href="Local_healthcare.csv.csv">Healthcare Dataset (CSV)</a></li>
+    <li><a href="new%20Healthcare_Analysis.py">Python Analysis Code</a></li>
+    <li><a href="Local_healthcare%20query.sql">SQL Queries</a></li>
+    <li><a href="Internship%20Documentation.docx">Internship Documentation (Word)</a></li>
+    <li><a href="new%20dashboard..pbix">Power BI Dashboard File</a></li>
+    <li><a href="README.md">Project README</a></li>
+  </ul>
+</section>
+
+<section id="insights">
+  <h2>Business Insights & Recommendations</h2>
+  <ul>
+    <li>Compare facility availability across the areas represented in the dataset.</li>
+    <li>Review the distribution of facility types and recorded specialties.</li>
+    <li>Examine publicly listed ratings and review counts.</li>
+    <li>Identify facilities whose emergency availability is recorded as available.</li>
+    <li>Investigate missing service information and areas that may need further data collection.</li>
+  </ul>
+  <h3>Potential Digital Opportunities</h3>
+  <p>
+    Appointment management, healthcare directories and queue management
+    could be explored as possible technology solutions. Further validation
+    is needed before concluding that a specific service is in demand.
+  </p>
+  <div class="note">
+    <strong>Data limitation:</strong> Findings apply to the 100 collected
+    records. They should not be interpreted as a complete census of healthcare
+    services or as proof of unmet demand.
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <p><strong>Local Healthcare Accessibility Analysis</strong></p>
+  <p>ZoyaSofts Industry-Ready Internship Project</p>
+  <p>Project by Sakshi Patil</p>
+</footer>
+
+</body>
+</html>
