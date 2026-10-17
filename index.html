@@ -2,316 +2,402 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Healthcare Accessibility Analysis | Sakshi Patil</title>
-<style>
-:root {
-  --navy: #102b46;
-  --blue: #087eaf;
-  --teal: #13a89e;
-  --light: #f2f7fb;
-  --text: #24364b;
-}
-* { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background: var(--light);
-  color: var(--text);
-  line-height: 1.7;
-}
-header {
-  background: linear-gradient(120deg, #102b46, #087eaf);
-  color: white;
-  padding: 70px 20px 60px;
-  text-align: center;
-}
-header .tag {
-  display: inline-block;
-  padding: 5px 14px;
-  border: 1px solid #ffffff70;
-  border-radius: 30px;
-  font-size: 13px;
-}
-header h1 {
-  max-width: 900px;
-  margin: 20px auto 10px;
-  font-size: clamp(30px, 5vw, 48px);
-  line-height: 1.2;
-}
-header p { max-width: 700px; margin: 12px auto; }
-nav {
-  background: var(--navy);
-  padding: 14px 12px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-  position: sticky;
-  top: 0;
-  z-index: 10;
-}
-nav a {
-  color: white;
-  text-decoration: none;
-  font-size: 14px;
-}
-nav a:hover { color: #69e2d7; }
-main { width: min(1100px, 92%); margin: auto; }
-section {
-  margin: 28px 0;
-  padding: clamp(20px, 4vw, 36px);
-  background: white;
-  border-radius: 16px;
-  box-shadow: 0 5px 22px #1638580b;
-  scroll-margin-top: 75px;
-}
-h2 { color: var(--navy); margin-top: 0; }
-h3 { margin-top: 8px; }
-.subtitle { color: #63768b; }
-.stats, .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
-  gap: 18px;
-}
-.stat, .tile {
-  padding: 22px;
-  border-radius: 12px;
-  background: #edf7fc;
-  border: 1px solid #e1edf5;
-}
-.stat strong {
-  display: block;
-  font-size: 32px;
-  color: var(--blue);
-}
-.tile h3 { color: var(--blue); }
-.btn {
-  display: inline-block;
-  padding: 10px 17px;
-  border-radius: 8px;
-  background: var(--blue);
-  color: white;
-  text-decoration: none;
-  margin: 5px 5px 5px 0;
-  font-weight: bold;
-}
-.btn:hover { background: var(--navy); }
-.btn.secondary { background: #e4f6f3; color: #126b65; }
-.preview {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 18px;
-}
-.preview figure { margin: 0; }
-.preview img {
-  width: 100%;
-  height: 190px;
-  object-fit: contain;
-  background: #f3f6f9;
-  border: 1px solid #e1e8ef;
-  border-radius: 10px;
-}
-figcaption { font-size: 14px; padding: 8px 2px; }
-.file-list { padding-left: 20px; }
-.file-list li { margin: 10px 0; }
-.note {
-  padding: 14px 18px;
-  border-left: 4px solid var(--teal);
-  background: #effaf8;
-  border-radius: 5px;
-}
-footer {
-  margin-top: 50px;
-  padding: 30px 18px;
-  text-align: center;
-  background: var(--navy);
-  color: white;
-}
-footer p { margin: 4px; }
-@media(max-width:600px) {
-  nav { gap: 12px; }
-  nav a { font-size: 12px; }
-  header { padding: 48px 16px; }
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local Healthcare Accessibility Analysis</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f8fb;
+      color: #263445;
+      line-height: 1.7;
+    }
+
+    header {
+      background: linear-gradient(135deg, #103c5a, #087e8b);
+      color: white;
+      padding: 55px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 34px;
+      margin-bottom: 12px;
+    }
+
+    header p {
+      font-size: 17px;
+    }
+
+    nav {
+      background: #092f45;
+      padding: 15px 10px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 12px;
+      font-size: 14px;
+      display: inline-block;
+    }
+
+    nav a:hover {
+      color: #7ce8dd;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 25px 18px;
+    }
+
+    section {
+      background: white;
+      padding: 28px;
+      margin: 22px 0;
+      border-radius: 12px;
+      box-shadow: 0 3px 14px rgba(0, 0, 0, 0.06);
+    }
+
+    h2 {
+      color: #087e8b;
+      margin-bottom: 16px;
+      border-bottom: 2px solid #dceff1;
+      padding-bottom: 8px;
+    }
+
+    h3 {
+      color: #164b68;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      padding-left: 24px;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .stat {
+      background: #eaf6f7;
+      padding: 20px;
+      text-align: center;
+      border-radius: 10px;
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 27px;
+      color: #087e8b;
+    }
+
+    .chart-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 22px;
+      margin-top: 20px;
+    }
+
+    .chart-card {
+      border: 1px solid #e1e9ef;
+      border-radius: 12px;
+      overflow: hidden;
+      padding: 18px;
+      background: #fff;
+    }
+
+    .chart-card h3 {
+      font-size: 18px;
+    }
+
+    .chart-card p {
+      font-size: 14px;
+      color: #526170;
+      margin-bottom: 12px;
+    }
+
+    .chart-card img,
+    .dashboard-img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 7px;
+      border: 1px solid #e5e9ed;
+    }
+
+    .file-list a {
+      display: block;
+      padding: 10px 0;
+      color: #087e8b;
+      text-decoration: none;
+      border-bottom: 1px solid #e8eef2;
+      overflow-wrap: anywhere;
+    }
+
+    .file-list a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      background: #092f45;
+      color: white;
+      padding: 25px 15px;
+      margin-top: 35px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 26px;
+      }
+
+      nav a {
+        margin: 5px 7px;
+      }
+
+      section {
+        padding: 20px 15px;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
-<header>
-  <span class="tag">ZOYASOFTS · INDUSTRY-READY INTERNSHIP</span>
-  <h1>Local Healthcare Accessibility Analysis</h1>
-  <p>Using SQL, Python and Power BI to explore healthcare facilities,
-  public ratings, specialties and service availability.</p>
-  <p><strong>Project by Sakshi Patil</strong></p>
-  <a class="btn secondary" href="#about">Explore Project</a>
-  <a class="btn" href="#dashboard">View Dashboard</a>
-</header>
+  <header>
+    <h1>Local Healthcare Accessibility Analysis</h1>
+    <p>Data Analytics and Business Intelligence Project</p>
+    <p>ZoyaSofts Industry-Ready Internship Project</p>
+  </header>
 
-<nav>
-  <a href="#about">About</a>
-  <a href="#dataset">Dataset</a>
-  <a href="#tools">Tools</a>
-  <a href="#dashboard">Dashboard</a>
-  <a href="#charts">Charts</a>
-  <a href="#files">Project Files</a>
-  <a href="#insights">Insights</a>
-</nav>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#dataset">Dataset</a>
+    <a href="#tools">Tools</a>
+    <a href="#dashboard">Dashboard</a>
+    <a href="#eda">EDA Charts</a>
+    <a href="#files">Project Files</a>
+  </nav>
 
-<main>
+  <main class="container">
 
-<section id="about">
-  <h2>About the Project</h2>
-  <p>
-    This project examines publicly listed healthcare facility information
-    to understand the distribution and availability of hospitals, clinics
-    and diagnostic centers across recorded areas of Kolhapur.
-  </p>
-  <p>
-    The analysis covers facility types, specialties, opening hours,
-    public ratings, review counts, listed consultation ranges and
-    emergency availability.
-  </p>
-  <div class="note">
-    <strong>Project objective:</strong> Convert collected data into useful
-    insights that may support better understanding of local healthcare
-    services and potential digital technology opportunities.
-  </div>
-</section>
+    <section id="about">
+      <h2>About the Project</h2>
+      <p>
+        The Local Healthcare Accessibility Analysis project examines
+        publicly available information about healthcare facilities.
+        It explores facility types, areas, specialties, public ratings,
+        review counts, opening hours, consultation ranges, and recorded
+        emergency service availability.
+      </p>
 
-<section id="dataset">
-  <h2>Dataset Overview</h2>
-  <p class="subtitle">Summary of the collected project dataset.</p>
-  <div class="stats">
-    <div class="stat"><strong>100</strong>Total Records</div>
-    <div class="stat"><strong>50</strong>Hospitals</div>
-    <div class="stat"><strong>25</strong>Clinics</div>
-    <div class="stat"><strong>25</strong>Diagnostic Centers</div>
-  </div>
-  <p>
-    The dataset contains 100 records and 10 columns. These figures describe
-    the collected dataset and do not represent every healthcare provider
-    in the region.
-  </p>
-</section>
+      <div class="stats">
+        <div class="stat">
+          <strong>100</strong>
+          Dataset Records
+        </div>
+        <div class="stat">
+          <strong>50</strong>
+          Hospitals
+        </div>
+        <div class="stat">
+          <strong>25</strong>
+          Clinics
+        </div>
+        <div class="stat">
+          <strong>25</strong>
+          Diagnostic Centers
+        </div>
+      </div>
 
-<section id="tools">
-  <h2>Tools & Technologies</h2>
-  <div class="grid">
-    <div class="tile">
-      <h3>Excel / CSV</h3>
-      <p>Dataset organization and storage.</p>
-    </div>
-    <div class="tile">
-      <h3>PostgreSQL / SQL</h3>
-      <p>Database queries, record counts and grouped analysis.</p>
-    </div>
-    <div class="tile">
-      <h3>Python</h3>
-      <p>Exploratory data analysis and analytical summaries.</p>
-    </div>
-    <div class="tile">
-      <h3>Matplotlib</h3>
-      <p>Charts and data visualization.</p>
-    </div>
-    <div class="tile">
-      <h3>Power BI</h3>
-      <p>Dashboard design and visual reporting.</p>
-    </div>
-  </div>
-</section>
+      <p style="margin-top: 18px;">
+        <strong>Prepared by:</strong> Sakshi Patil<br>
+        <strong>College:</strong> D. R. Mane Mahavidyalaya, Kagal<br>
+        <strong>Organization:</strong> ZoyaSofts
+      </p>
 
-<section id="dashboard">
-  <h2>Power BI Dashboard</h2>
-  <p>
-    Explore the dashboard preview created for the healthcare facility
-    analysis project.
-  </p>
-  <figure>
-    <a href="powerbidashboard.png" target="_blank">
-      <img src="powerbidashboard.png"
-           alt="Healthcare analysis Power BI dashboard"
-           style="width:100%;border-radius:12px;border:1px solid #dbe5ee">
-    </a>
-    <figcaption>Power BI dashboard preview. Select the image to enlarge it.</figcaption>
-  </figure>
-  <p>
-    <a class="btn" href="new%20dashboard..pbix" download>
-      Open / Download Power BI File
-    </a>
-  </p>
-</section>
+      <p style="margin-top: 12px;">
+        <strong>Privacy note:</strong> This project uses publicly
+        available healthcare facility information and does not include
+        patient records or private medical information.
+      </p>
+    </section>
 
-<section id="charts">
-  <h2>Power BI Chart Gallery</h2>
-  <p class="subtitle">
-    Select a chart to view its full-size image.
-  </p>
-  <div class="preview">
-    <figure><a href="powerbi.png" target="_blank"><img src="powerbi.png" alt="Power BI chart 1"></a><figcaption>Chart 1</figcaption></figure>
-    <figure><a href="powerbi1.png" target="_blank"><img src="powerbi1.png" alt="Power BI chart 2"></a><figcaption>Chart 2</figcaption></figure>
-    <figure><a href="powerbi2.png" target="_blank"><img src="powerbi2.png" alt="Power BI chart 3"></a><figcaption>Chart 3</figcaption></figure>
-    <figure><a href="powerbi3.png" target="_blank"><img src="powerbi3.png" alt="Power BI chart 4"></a><figcaption>Chart 4</figcaption></figure>
-    <figure><a href="powerbi4.png" target="_blank"><img src="powerbi4.png" alt="Power BI chart 5"></a><figcaption>Chart 5</figcaption></figure>
-    <figure><a href="powerbi5.png" target="_blank"><img src="powerbi5.png" alt="Power BI chart 6"></a><figcaption>Chart 6</figcaption></figure>
-    <figure><a href="powerbi6.png" target="_blank"><img src="powerbi6.png" alt="Power BI chart 7"></a><figcaption>Chart 7</figcaption></figure>
-    <figure><a href="powerbi7.png" target="_blank"><img src="powerbi7.png" alt="Power BI chart 8"></a><figcaption>Chart 8</figcaption></figure>
-    <figure><a href="powerbi8.png" target="_blank"><img src="powerbi8.png" alt="Power BI chart 9"></a><figcaption>Chart 9</figcaption></figure>
-    <figure><a href="powerbi9.png" target="_blank"><img src="powerbi9.png" alt="Power BI chart 10"></a><figcaption>Additional dashboard view 10</figcaption></figure>
-    <figure><a href="powerbi10.png" target="_blank"><img src="powerbi10.png" alt="Power BI chart 11"></a><figcaption>Additional dashboard view 11</figcaption></figure>
-    <figure><a href="powerbi11.png" target="_blank"><img src="powerbi11.png" alt="Power BI chart 12"></a><figcaption>Additional dashboard view 12</figcaption></figure>
-    <figure><a href="powerbi12.png" target="_blank"><img src="powerbi12.png" alt="Power BI chart 13"></a><figcaption>Additional dashboard view 13</figcaption></figure>
-    <figure><a href="powerbi13.png" target="_blank"><img src="powerbi13.png" alt="Power BI chart 14"></a><figcaption>Additional dashboard view 14</figcaption></figure>
-    <figure><a href="powerbi14.png" target="_blank"><img src="powerbi14.png" alt="Power BI chart 15"></a><figcaption>Additional dashboard view 15</figcaption></figure>
-    <figure><a href="powerbi15.png" target="_blank"><img src="powerbi15.png" alt="Power BI chart 16"></a><figcaption>Additional dashboard view 16</figcaption></figure>
-  </div>
-</section>
+    <section id="dataset">
+      <h2>Dataset Information</h2>
+      <p>
+        The dataset contains 100 records and 10 columns covering
+        healthcare facility details.
+      </p>
+      <ul>
+        <li>Facility Type and Facility Name</li>
+        <li>Area and Speciality</li>
+        <li>Opening Hours</li>
+        <li>Public Rating and Review Count</li>
+        <li>Publicly Listed Consultation Range</li>
+        <li>Emergency Availability</li>
+      </ul>
+    </section>
 
-<section id="files">
-  <h2>Project Files</h2>
-  <p>Open the project resources stored in this repository.</p>
-  <ul class="file-list">
-    <li><a href="Local_Healthcare_data.xlsx">Healthcare Dataset (Excel)</a></li>
-    <li><a href="Local_healthcare.csv.csv">Healthcare Dataset (CSV)</a></li>
-    <li><a href="new%20Healthcare_Analysis.py">Python Analysis Code</a></li>
-    <li><a href="Local_healthcare%20query.sql">SQL Queries</a></li>
-    <li><a href="Internship%20Documentation.docx">Internship Documentation (Word)</a></li>
-    <li><a href="new%20dashboard..pbix">Power BI Dashboard File</a></li>
-    <li><a href="README.md">Project README</a></li>
-  </ul>
-</section>
+    <section id="tools">
+      <h2>Tools and Technologies</h2>
+      <ul>
+        <li>Excel and CSV – Dataset organization</li>
+        <li>PostgreSQL / SQL – Data querying and analysis</li>
+        <li>Python – Data analysis and preprocessing</li>
+        <li>Matplotlib – Data visualization</li>
+        <li>Power BI – Dashboard development</li>
+      </ul>
+    </section>
 
-<section id="insights">
-  <h2>Business Insights & Recommendations</h2>
-  <ul>
-    <li>Compare facility availability across the areas represented in the dataset.</li>
-    <li>Review the distribution of facility types and recorded specialties.</li>
-    <li>Examine publicly listed ratings and review counts.</li>
-    <li>Identify facilities whose emergency availability is recorded as available.</li>
-    <li>Investigate missing service information and areas that may need further data collection.</li>
-  </ul>
-  <h3>Potential Digital Opportunities</h3>
-  <p>
-    Appointment management, healthcare directories and queue management
-    could be explored as possible technology solutions. Further validation
-    is needed before concluding that a specific service is in demand.
-  </p>
-  <div class="note">
-    <strong>Data limitation:</strong> Findings apply to the 100 collected
-    records. They should not be interpreted as a complete census of healthcare
-    services or as proof of unmet demand.
-  </div>
-</section>
+    <section id="dashboard">
+      <h2>Power BI Dashboard</h2>
+      <p>
+        The dashboard presents healthcare facility information
+        through visual summaries and charts.
+      </p>
+      <img
+        class="dashboard-img"
+        src="powerbidashboard.png"
+        alt="Power BI Healthcare Dashboard"
+        loading="lazy"
+      >
+    </section>
 
-</main>
+    <section id="eda">
+      <h2>Exploratory Data Analysis (EDA)</h2>
+      <p>
+        The following sections present the analysis charts prepared
+        for this project.
+      </p>
 
-<footer>
-  <p><strong>Local Healthcare Accessibility Analysis</strong></p>
-  <p>ZoyaSofts Industry-Ready Internship Project</p>
-  <p>Project by Sakshi Patil</p>
-</footer>
+      <div class="chart-grid">
+
+        <article class="chart-card">
+          <h3>EDA 1 – Facility Type-wise Distribution</h3>
+          <p>Distribution of hospitals, clinics, and diagnostic centers.</p>
+          <a href="powerbi.png" target="_blank">
+            <img src="powerbi.png" alt="EDA 1 Facility Type Distribution" loading="lazy">
+          </a>
+        </article>
+
+        <article class="chart-card">
+          <h3>EDA 2 – Area-wise Facility Distribution</h3>
+          <p>Healthcare facility distribution across different areas.</p>
+          <a href="powerbi1.png" target="_blank">
+            <img src="powerbi1.png" alt="EDA 2 Area-wise Distribution" loading="lazy">
+          </a>
+        </article>
+
+        <article class="chart-card">
+          <h3>EDA 3 – Facility Name-wise Comparison</h3>
+          <p>Comparison of facilities by their names.</p>
+          <a href="powerbi2.png" target="_blank">
+            <img src="powerbi2.png" alt="EDA 3 Facility Comparison" loading="lazy">
+          </a>
+        </article>
+
+        <article class="chart-card">
+          <h3>EDA 4 – Healthcare Facility Rating Analysis</h3>
+          <p>Analysis of publicly listed healthcare facility ratings.</p>
+          <a href="powerbi3.png" target="_blank">
+            <img src="powerbi3.png" alt="EDA 4 Rating Analysis" loading="lazy">
+          </a>
+        </article>
+
+        <article class="chart-card">
+          <h3>EDA 5 – Public Review Count Analysis</h3>
+          <p>Exploration of publicly listed review counts.</p>
+          <a href="powerbi4.png" target="_blank">
+            <img src="powerbi4.png" alt="EDA 5 Review Count Analysis" loading="lazy">
+          </a>
+        </article>
+
+        <article class="chart-card">
+          <h3>EDA 6 – Healthcare Facility Opening Hours</h3>
+          <p>Analysis of recorded opening hours.</p>
+          <a href="powerbi5.png" target="_blank">
+            <img src="powerbi5.png" alt="EDA 6 Opening Hours" loading="lazy">
+          </a>
+        </article>
+
+        <article class="chart-card">
+          <h3>EDA 7 – Area-wise Average Rating</h3>
+          <p>Comparison of average public ratings by area.</p>
+          <a href="powerbi6.png" target="_blank">
+            <img src="powerbi6.png" alt="EDA 7 Area-wise Average Rating" loading="lazy">
+          </a>
+        </article>
+
+        <article class="chart-card">
+          <h3>EDA 8 – Consultation Range Analysis</h3>
+          <p>Exploration of publicly listed consultation ranges.</p>
+          <a href="powerbi7.png" target="_blank">
+            <img src="powerbi7.png" alt="EDA 8 Consultation Range" loading="lazy">
+          </a>
+        </article>
+
+        <article class="chart-card">
+          <h3>EDA 9 – Emergency Service Availability</h3>
+          <p>Analysis of recorded emergency service availability.</p>
+          <a href="powerbi8.png" target="_blank">
+            <img src="powerbi8.png" alt="EDA 9 Emergency Availability" loading="lazy">
+          </a>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="files">
+      <h2>Project Files</h2>
+      <div class="file-list">
+        <a href="Local_Healthcare_data.xlsx">Excel Dataset</a>
+        <a href="Local_healthcare.csv.csv">CSV Dataset</a>
+        <a href="Local_healthcare%20query.sql">SQL Queries</a>
+        <a href="new%20Healthcare_Analysis.py">Python Analysis Code</a>
+        <a href="new%20dashboard..pbix">Power BI Dashboard File</a>
+        <a href="Internship%20Documentation.docx">Internship Documentation</a>
+      </div>
+    </section>
+
+    <section>
+      <h2>Conclusion</h2>
+      <p>
+        This project demonstrates the use of SQL, Python, Matplotlib,
+        and Power BI to organize, analyze, and visualize publicly
+        available healthcare facility information.
+      </p>
+      <p>
+        The results should be interpreted within the limits of the
+        available dataset. Missing information does not necessarily
+        mean a service is unavailable, and additional research is
+        needed to validate possible service gaps or business demand.
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Local Healthcare Accessibility Analysis</p>
+    <p>ZoyaSofts Internship Project | Sakshi Patil</p>
+  </footer>
 
 </body>
 </html>
