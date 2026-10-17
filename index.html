@@ -1,207 +1,403 @@
-# Local Healthcare Accessibility Analysis
 
-## ZoyaSofts Industry-Ready Internship Project
-
-**Project Title:** Local Healthcare Accessibility Analysis  
-**Project Domain:** Healthcare Data Analytics  
-**Project Type:** Data Analytics and Business Intelligence  
-**Organization:** ZoyaSofts  
-**College:** D. R. Mane Mahavidyalaya, Kagal  
-**Prepared By:** Sakshi Patil  
-**Project Duration:** 14 Days
-
----
-
-## 1. Project Overview
-
-The Local Healthcare Accessibility Analysis project focuses on analyzing publicly available information about healthcare facilities. It explores facility distribution, specialties, public ratings, review counts, opening hours, consultation price ranges, and emergency service availability.
-
-The project follows a data analytics workflow using SQL, Python, data visualization, and Power BI to organize and present healthcare facility information.
-
-**Privacy Note:** This project uses publicly available healthcare facility information and does not include patient records or private medical information.
-
-## 2. Project Objectives
-
-- Analyze healthcare facilities by facility type.
-- Explore healthcare facility distribution across different areas.
-- Examine publicly listed facility ratings and review counts.
-- Review available specialties and opening hours.
-- Analyze publicly listed consultation price ranges.
-- Explore recorded emergency service availability.
-- Create charts and a Power BI dashboard.
-- Present observations and recommendations based on the available dataset.
-
-## 3. Dataset Information
-
-The dataset contains **100 records and 10 columns**.
-
-| Facility Type | Number of Facilities |
-|---|---:|
-| Hospitals | 50 |
-| Clinics | 25 |
-| Diagnostic Centers | 25 |
-| **Total** | **100** |
-
-### Dataset Columns
-
-1. `Sr_no`
-2. `Facility_Type`
-3. `Facility_Name`
-4. `Area`
-5. `Speciality`
-6. `Opening_hours`
-7. `Public_rating`
-8. `Review_count`
-9. `Publicly_listed_consultation_range`
-10. `Emergency_availability`
-
-## 4. Tools and Technologies
-
-- **Excel:** Dataset inspection and organization
-- **CSV:** Structured dataset storage
-- **PostgreSQL / SQL:** Data querying and analysis
-- **Python:** Data analysis and preprocessing
-- **Matplotlib:** Data visualization
-- **Power BI:** Dashboard creation and business intelligence
-
-## 5. Project Workflow
-
-1. Business Problem Identification
-2. Public Data Collection
-3. Data Storage
-4. Data Cleaning and Preprocessing
-5. SQL Analysis
-6. Python Exploratory Data Analysis
-7. Data Visualization
-8. Power BI Dashboard Development
-9. Business Insights and Recommendations
-10. Project Documentation
-
-## 6. Data Analysis and Visualizations
-
-### 6.1 Facility Type-wise Distribution
-
-Analyzes the distribution of hospitals, clinics, and diagnostic centers in the dataset.
-
-### 6.2 Area-wise Healthcare Facility Distribution
-
-Explores the number of healthcare facilities recorded across different areas.
-
-### 6.3 Facility Name-wise Comparison
-
-Provides a comparison of healthcare facilities by their names.
-
-### 6.4 Healthcare Facility Rating Analysis
-
-Examines the publicly listed ratings of healthcare facilities.
-
-### 6.5 Public Review Count Analysis
-
-Analyzes publicly listed review counts for the facilities.
-
-### 6.6 Healthcare Facility Opening Hours
-
-Explores the opening hours recorded for healthcare facilities.
-
-### 6.7 Area-wise Average Rating
-
-Compares average public ratings across different areas, where sufficient valid rating data is available.
-
-### 6.8 Consultation Range Analysis
-
-Examines publicly listed consultation price ranges.
-
-### 6.9 Emergency Service Availability
-
-Analyzes the recorded emergency service availability information.
-
-## 7. Power BI Dashboard
-
-The Power BI dashboard presents the healthcare facility dataset using summary indicators and visualizations.
-
-### Dashboard Preview
-
-![Power BI Dashboard](powerbidashboard.png)
-
-### Additional Dashboard View
-
-![Power BI Dashboard View](powerbi.png)
-
-![Power BI Dashboard View](powerbi1.png)
-
-## 8. Project Charts
-
-The repository contains the following chart image files. The titles below describe their intended analysis; the exact image-to-title match should be checked against each chart.
-
-### Facility Type-wise Distribution
-
-![Facility Type-wise Distribution](powerbi2.png)
-
-### Area-wise Healthcare Facility Distribution
-
-![Area-wise Healthcare Facility Distribution](powerbi3.png)
-
-### Facility Name-wise Comparison
-
-![Facility Name-wise Comparison](powerbi4.png)
-
-### Healthcare Facility Rating Analysis
-
-![Healthcare Facility Rating Analysis](powerbi5.png)
-
-### Public Review Count Analysis
-
-![Public Review Count Analysis](powerbi6.png)
-
-### Healthcare Facility Opening Hours
-
-![Healthcare Facility Opening Hours](powerbi7.png)
-
-### Area-wise Average Rating
-
-![Area-wise Average Rating](powerbi8.png)
-
-### Consultation Range Analysis
-
-![Consultation Range Analysis](powerbi9.png)
-
-### Emergency Service Availability
-
-![Emergency Service Availability](powerbi10.png)
-
-## 9. Project Files
-
-- [Excel Dataset](Local_Healthcare_data.xlsx)
-- [CSV Dataset](Local_healthcare.csv.csv)
-- [SQL Queries](Local_healthcare%20query.sql)
-- [Python Analysis Code](new%20Healthcare_Analysis.py)
-- [Power BI Dashboard File](new%20dashboard..pbix)
-- [Internship Documentation](Internship%20Documentation.docx)
-
-## 10. Business Value
-
-This analysis provides a structured view of publicly available healthcare facility information. It can help users explore facility types, locations, listed specialties, public ratings, consultation ranges, and recorded emergency service information.
-
-The analysis may inform future healthcare information or facility discovery solutions. However, additional validation and research would be required before concluding that a particular area has a healthcare service gap or that there is proven business demand.
-
-## 11. Project Limitations
-
-- The analysis is limited to the available dataset.
-- Public ratings and review counts may change over time.
-- Missing or unlisted information does not necessarily mean a service is unavailable.
-- The dataset does not establish actual patient demand.
-- Business recommendations should be validated with additional research.
-- Each chart image should be checked to ensure its filename matches the analysis title.
-
-## 12. Conclusion
-
-The Local Healthcare Accessibility Analysis project demonstrates how SQL, Python, Matplotlib, and Power BI can be used to analyze and visualize publicly available healthcare facility information.
-
-The project organizes facility data and presents insights into facility distribution, ratings, reviews, opening hours, consultation ranges, and recorded emergency service availability.
-
----
-
-**Project Name:** Local Healthcare Accessibility Analysis  
-**Organization:** ZoyaSofts  
-**College:** D. R. Mane Mahavidyalaya, Kagal  
-**Prepared By:** Sakshi Patil
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local Healthcare Accessibility Analysis</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f8fb;
+      color: #263445;
+      line-height: 1.7;
+    }
+
+    header {
+      background: linear-gradient(135deg, #103c5a, #087e8b);
+      color: white;
+      padding: 55px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 34px;
+      margin-bottom: 12px;
+    }
+
+    header p {
+      font-size: 17px;
+    }
+
+    nav {
+      background: #092f45;
+      padding: 15px 10px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 12px;
+      font-size: 14px;
+      display: inline-block;
+    }
+
+    nav a:hover {
+      color: #7ce8dd;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 25px 18px;
+    }
+
+    section {
+      background: white;
+      padding: 28px;
+      margin: 22px 0;
+      border-radius: 12px;
+      box-shadow: 0 3px 14px rgba(0, 0, 0, 0.06);
+    }
+
+    h2 {
+      color: #087e8b;
+      margin-bottom: 16px;
+      border-bottom: 2px solid #dceff1;
+      padding-bottom: 8px;
+    }
+
+    h3 {
+      color: #164b68;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      padding-left: 24px;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .stat {
+      background: #eaf6f7;
+      padding: 20px;
+      text-align: center;
+      border-radius: 10px;
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 27px;
+      color: #087e8b;
+    }
+
+    .chart-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 22px;
+      margin-top: 20px;
+    }
+
+    .chart-card {
+      border: 1px solid #e1e9ef;
+      border-radius: 12px;
+      overflow: hidden;
+      padding: 18px;
+      background: #fff;
+    }
+
+    .chart-card h3 {
+      font-size: 18px;
+    }
+
+    .chart-card p {
+      font-size: 14px;
+      color: #526170;
+      margin-bottom: 12px;
+    }
+
+    .chart-card img,
+    .dashboard-img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 7px;
+      border: 1px solid #e5e9ed;
+    }
+
+    .file-list a {
+      display: block;
+      padding: 10px 0;
+      color: #087e8b;
+      text-decoration: none;
+      border-bottom: 1px solid #e8eef2;
+      overflow-wrap: anywhere;
+    }
+
+    .file-list a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      background: #092f45;
+      color: white;
+      padding: 25px 15px;
+      margin-top: 35px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 26px;
+      }
+
+      nav a {
+        margin: 5px 7px;
+      }
+
+      section {
+        padding: 20px 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Local Healthcare Accessibility Analysis</h1>
+    <p>Data Analytics and Business Intelligence Project</p>
+    <p>ZoyaSofts Industry-Ready Internship Project</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#dataset">Dataset</a>
+    <a href="#tools">Tools</a>
+    <a href="#dashboard">Dashboard</a>
+    <a href="#eda">EDA Charts</a>
+    <a href="#files">Project Files</a>
+  </nav>
+
+  <main class="container">
+
+    <section id="about">
+      <h2>About the Project</h2>
+      <p>
+        The Local Healthcare Accessibility Analysis project examines
+        publicly available information about healthcare facilities.
+        It explores facility types, areas, specialties, public ratings,
+        review counts, opening hours, consultation ranges, and recorded
+        emergency service availability.
+      </p>
+
+      <div class="stats">
+        <div class="stat">
+          <strong>100</strong>
+          Dataset Records
+        </div>
+        <div class="stat">
+          <strong>50</strong>
+          Hospitals
+        </div>
+        <div class="stat">
+          <strong>25</strong>
+          Clinics
+        </div>
+        <div class="stat">
+          <strong>25</strong>
+          Diagnostic Centers
+        </div>
+      </div>
+
+      <p style="margin-top: 18px;">
+        <strong>Prepared by:</strong> Sakshi Patil<br>
+        <strong>College:</strong> D. R. Mane Mahavidyalaya, Kagal<br>
+        <strong>Organization:</strong> ZoyaSofts
+      </p>
+
+      <p style="margin-top: 12px;">
+        <strong>Privacy note:</strong> This project uses publicly
+        available healthcare facility information and does not include
+        patient records or private medical information.
+      </p>
+    </section>
+
+    <section id="dataset">
+      <h2>Dataset Information</h2>
+      <p>
+        The dataset contains 100 records and 10 columns covering
+        healthcare facility details.
+      </p>
+      <ul>
+        <li>Facility Type and Facility Name</li>
+        <li>Area and Speciality</li>
+        <li>Opening Hours</li>
+        <li>Public Rating and Review Count</li>
+        <li>Publicly Listed Consultation Range</li>
+        <li>Emergency Availability</li>
+      </ul>
+    </section>
+
+    <section id="tools">
+      <h2>Tools and Technologies</h2>
+      <ul>
+        <li>Excel and CSV – Dataset organization</li>
+        <li>PostgreSQL / SQL – Data querying and analysis</li>
+        <li>Python – Data analysis and preprocessing</li>
+        <li>Matplotlib – Data visualization</li>
+        <li>Power BI – Dashboard development</li>
+      </ul>
+    </section>
+
+    <section id="dashboard">
+      <h2>Power BI Dashboard</h2>
+      <p>
+        The dashboard presents healthcare facility information
+        through visual summaries and charts.
+      </p>
+      <img
+        class="dashboard-img"
+        src="powerbidashboard.png"
+        alt="Power BI Healthcare Dashboard"
+        loading="lazy"
+      >
+    </section>
+
+    <section id="eda">
+      <h2>Exploratory Data Analysis (EDA)</h2>
+      <p>
+        The following sections present the analysis charts prepared
+        for this project.
+      </p>
+
+      <div class="chart-grid">
+
+        <article class="chart-card">
+          <h3>EDA 1 – Facility Type-wise Distribution</h3>
+          <p>Distribution of hospitals, clinics, and diagnostic centers.</p>
+          <a href="powerbi.png" target="_blank">
+            <img src="powerbi.png" alt="EDA 1 Facility Type Distribution" loading="lazy">
+          </a>
+        </article>
+
+        <article class="chart-card">
+          <h3>EDA 2 – Area-wise Facility Distribution</h3>
+          <p>Healthcare facility distribution across different areas.</p>
+          <a href="powerbi1.png" target="_blank">
+            <img src="powerbi1.png" alt="EDA 2 Area-wise Distribution" loading="lazy">
+          </a>
+        </article>
+
+        <article class="chart-card">
+          <h3>EDA 3 – Facility Name-wise Comparison</h3>
+          <p>Comparison of facilities by their names.</p>
+          <a href="powerbi2.png" target="_blank">
+            <img src="powerbi2.png" alt="EDA 3 Facility Comparison" loading="lazy">
+          </a>
+        </article>
+
+        <article class="chart-card">
+          <h3>EDA 4 – Healthcare Facility Rating Analysis</h3>
+          <p>Analysis of publicly listed healthcare facility ratings.</p>
+          <a href="powerbi3.png" target="_blank">
+            <img src="powerbi3.png" alt="EDA 4 Rating Analysis" loading="lazy">
+          </a>
+        </article>
+
+        <article class="chart-card">
+          <h3>EDA 5 – Public Review Count Analysis</h3>
+          <p>Exploration of publicly listed review counts.</p>
+          <a href="powerbi4.png" target="_blank">
+            <img src="powerbi4.png" alt="EDA 5 Review Count Analysis" loading="lazy">
+          </a>
+        </article>
+
+        <article class="chart-card">
+          <h3>EDA 6 – Healthcare Facility Opening Hours</h3>
+          <p>Analysis of recorded opening hours.</p>
+          <a href="powerbi5.png" target="_blank">
+            <img src="powerbi5.png" alt="EDA 6 Opening Hours" loading="lazy">
+          </a>
+        </article>
+
+        <article class="chart-card">
+          <h3>EDA 7 – Area-wise Average Rating</h3>
+          <p>Comparison of average public ratings by area.</p>
+          <a href="powerbi6.png" target="_blank">
+            <img src="powerbi6.png" alt="EDA 7 Area-wise Average Rating" loading="lazy">
+          </a>
+        </article>
+
+        <article class="chart-card">
+          <h3>EDA 8 – Consultation Range Analysis</h3>
+          <p>Exploration of publicly listed consultation ranges.</p>
+          <a href="powerbi7.png" target="_blank">
+            <img src="powerbi7.png" alt="EDA 8 Consultation Range" loading="lazy">
+          </a>
+        </article>
+
+        <article class="chart-card">
+          <h3>EDA 9 – Emergency Service Availability</h3>
+          <p>Analysis of recorded emergency service availability.</p>
+          <a href="powerbi8.png" target="_blank">
+            <img src="powerbi8.png" alt="EDA 9 Emergency Availability" loading="lazy">
+          </a>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="files">
+      <h2>Project Files</h2>
+      <div class="file-list">
+        <a href="Local_Healthcare_data.xlsx">Excel Dataset</a>
+        <a href="Local_healthcare.csv.csv">CSV Dataset</a>
+        <a href="Local_healthcare%20query.sql">SQL Queries</a>
+        <a href="new%20Healthcare_Analysis.py">Python Analysis Code</a>
+        <a href="new%20dashboard..pbix">Power BI Dashboard File</a>
+        <a href="Internship%20Documentation.docx">Internship Documentation</a>
+      </div>
+    </section>
+
+    <section>
+      <h2>Conclusion</h2>
+      <p>
+        This project demonstrates the use of SQL, Python, Matplotlib,
+        and Power BI to organize, analyze, and visualize publicly
+        available healthcare facility information.
+      </p>
+      <p>
+        The results should be interpreted within the limits of the
+        available dataset. Missing information does not necessarily
+        mean a service is unavailable, and additional research is
+        needed to validate possible service gaps or business demand.
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Local Healthcare Accessibility Analysis</p>
+    <p>ZoyaSofts Internship Project | Sakshi Patil</p>
+  </footer>
+
+</body>
+</html>
