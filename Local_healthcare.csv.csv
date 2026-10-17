@@ -1,0 +1,101 @@
+Sr_no,Facility_Type,Facility_Name,Area,Speciality,Opening_hours,Public_rating,Review_count,Publicly_listed_consultation_range,Emergency_availability
+1,Hospital,Aster Adhar Hospital,Shastri Nagar Kolhapur,"Cardiology, Orthopedics, Oncology & Neuro Surgery",Open 24 Hours,4.8,16908,"₹400 - ₹1,000",Yes Available
+2,Hospital,Apple Saraswati Multispeciality Hospital,Bhosalewadi Kolhapur,"Cardiology, Orthopedics, Oncology & Interventional Radiology",Open 24 Hours,4.7,2455,"₹500 - ₹1,000",Yes Available
+3,Hospital,Sachin Multispeciality Hospital,Rajarampuri Kolhapur,"Cardiology, (Heart Care) & Critical Care",Open 24 Hours,4.9,5567,"₹300 - ₹1,000",Yes Available
+4,Hospital,Dr Agarwals Eye Hospital,"Tararani Chowk, Kolhapur",Eye Specialist,9:00am-7:00pm,4.9,797,"₹100 - ₹500",Not Available
+5,Hospital,Shrawastie Hospital,Shivaji Peth Kolhapur,"Cardiology, & Diabetologist",Open 24 Hours,4.9,219,"₹300 - ₹500",Yes Available
+6,Hospital,KPC Multispeciality Hospital,Mangalwar Peth,Multispeciality,Open 24 Hours,4.5,137,"₹500 - ₹1,000",Yes Available
+7,Hospital,Sunrise Multispeciality Hospital,Shahupuri (E Ward),"General Surgery & Critical Care Medicine",Open 24 Hours,4.7,820,"₹300 - ₹800",Yes Available
+8,Hospital,Krishna Hospital,Sambhaji Nagar Kolhapur,"General & Chest Medicine, Critical Care",Open 24 Hours,4.7,725,"₹300 - ₹500",Yes Available
+9,Hospital,WIINS Multispeciality,Kasaba Bawada,"Neurology, Spine Surgery & Trauma Care",Open 24 Hours,4.8,73,"₹400 - ₹1,000",Yes Available
+10,Hospital,Surya Hospital,Kasaba Bawada,Pediatric & Neonatology,Open 24 Hours,4.9,797,"₹300 - ₹600",Yes Available
+11,Hospital,Athaayu Hospital,Ujalaiwadi,"Cardiac, Trauma & Super Speciality Care",Open 24 Hours,4.5,765,"₹500 - ₹1,000",Yes Available
+12,Hospital,City Pride Multispeciality Hospital,"Ring Road, Kagal","Robotic Surgery, Cardiology & Children's Heart Care",Open 24 Hours,4.9,947,"₹300 - ₹500",Yes Available
+13,Hospital,Galaxy Hospital,Shivganga Hospital,Multispeciality,Open 24 Hours,4.8,121,"₹500 - ₹1,000",Yes Available
+14,Hospital,New Life Multispeciality Hospital,New Vashi Naka Kolhapur,Multispeciality,Open 24 Hours,4.9,233,"₹500 - ₹1,000",Yes Available
+15,Hospital,Shreyash Multispecialist & Research Institute,"Ujalaiwadi, Kolhapur",Multispeciality Hospital,Open 24 Hours,4.9,177,"₹500 - ₹1,000",Yes Available
+16,Hospital,Vital Urology Hospital,Morewadi,Multispeciality Hospital,Open 24 Hours,4.7,376,"₹400 - ₹1,000",Yes Available
+17,Hospital,Morya Multispeciality Hospital,Rajarampuri Kolhapur,Multispeciality Hospital,Open 24 Hours,4.6,171,"₹400 - ₹1,001",Yes Available
+18,Hospital,Orange Multispeciality Hospital,Mangalwar Peth,"Urology, Nephrology & Gastroenterology Care",Open 24 Hours,4.5,130,"₹300 - ₹600",Yes Available
+19,Hospital,Sarvodaya Superspeciality Hospital,"Shahupuri, Kolhapur","Multispeciality / Super Specialty Hospital",Open 24 Hours,5,62,"₹300 - ₹500",Yes Available
+20,Hospital,K-Star Multispeciality Hospital,Tapowan (Kalamba),"General Medicine, Orthopedics & OB-GYN",Open 24 Hours,4.7,199,"₹300 - ₹600",Yes Available
+21,Hospital,Kolhapur Cancer Centre,Kasaba Bawada,Oncology & Cancer Surgery Specialists,Open 24 Hours,4.9,435,"₹500 - ₹1,200",Yes Available
+22,Hospital,Sunshine Multispecialty Center,"Rankala Road (Dudhali), Kolhapur","General Surgery, Gynaecology & Paediatrics",Open 24 Hours,4.7,72,"₹300 - ₹500",Yes Available
+23,Hospital,Siddhivinayak Nursing Home,"E Ward, Kolhapur",Multispeciality,Open 24 Hours,4.7,327,"₹300 - ₹500",Yes Available
+24,Hospital,Siddhivinayak Hospital,"C Ward, Kolhapur","Internal Medicine & Laparoscopic Surgery",Open 24 Hours,4.6,15,"₹300 - ₹500",Yes Available
+25,Hospital,Kapileshwar Multispeciality Hospital,"Dudhali, Uttareshwar Peth, Kolhapur",Multispeciality,Open 24 Hours,4.9,177,"₹300 - ₹501",Yes Available
+26,Hospital,Swastik Hospital,"Shahupuri, Kolhapur","Critical Care, Gynecology & Orthopedics",9:00-6:30pm,4.3,38,"₹300 - ₹600",Not Available
+27,Hospital,CPR District Hospital,"Kavlapur, Kolhapur","Government General & Multi-Speciality Care",Open 24 Hours,3.9,238,"₹300 - ₹600",Yes Available
+28,Hospital,Om Multispeciality Hospital,"Sambhaji Nagar, Kolhapur",Multispeciality,Open 24 Hours,4.8,63,"₹300 - ₹600",Yes Available
+29,Hospital,Tulip Traumacare & Multispeciality Hospital,"Ruikar Colony, Kolhapur","Trauma, Orthopedics, Cardiology, Neurology, General Surgery",Open 24 Hours,4.6,696,"₹300 - ₹600",Yes Available
+30,Hospital,Loumineux Multispeciality Hospital,"Rajarampuri, Kolhapur","General / Multispeciality",Open 24 Hours,4.7,26,"₹500 - ₹1,200",Yes Available
+31,Hospital,Pristine Womens Hospital,"Shahupuri, Kolhapur","Gynecology, Obstetrics, Women's Health, IVF",Open 24 Hours,4.5,308,"₹100 - ₹250",Yes Available
+32,Hospital,Lokmanya Hospital,"Mahalaxminagar, Kolhapur",General Hospital,Open 24 Hours,4.8,58,"₹100 - ₹250",Yes Available
+33,Hospital,Vimal,"Shivganga Colony, Kolhapur",General Hospital,Open 24 Hours,4.7,125,"₹100 - ₹250",Yes Available
+34,Hospital,Life Line Hospital,"Padamala, Kolhapur",General Hospital,Open 24 Hours,4,110,"₹300 - ₹600",Yes Available
+35,Hospital,D Y Patil,"Kadamwadi, Kolhapur","General / Multispeciality",8:00am-8:00pm,4.1,316,"₹100 - ₹250",Not Available
+36,Hospital,Swarup Hospital,"Uttareshwar Peth, Kolhapur",General Hospital,Open 24 Hours,5,349,"₹300 - ₹600",Yes Available
+37,Hospital,Sai Sparsh Children's Hospital,"Mangalwar Peth, Kolhapur","Pediatrics / Children's Care",Open 24 Hours,4.7,890,"₹200 - ₹500",Yes Available
+38,Hospital,Dr. Vijay Kulkarni Davakhana,"Survey Nagar, Kolhapur",General Medicine,8:00am-1:00pm,4.7,15,"₹500 - ₹1,000",Not Available
+39,Hospital,Antrang Hospital,"Ramanmala, Kolhapur","Gastroenterology, GI Surgery, Urology, General Surgery",Open 24 Hours,4.6,1853,"₹300 - ₹600",Yes Available
+40,Hospital,seCURE,Shivaji Park,Multispeciality,Open 24 Hours,4.4,115,"₹300 - ₹600",Yes Available
+41,Hospital,Sadguru Multispeciality Hospital,"C Ward, Kolhapur",Multispeciality,Open 24 Hours,4.1,15,"₹100 - ₹250",Yes Available
+42,Hospital,Manorama Hospital,"Pratibhanagar Main Rd, Kolhapur",General Hospital,Open 24 Hours,4.1,17,"₹0 - ₹100 (Free)",Yes Available
+43,Hospital,Seva Hospital,"Police Head Quarters, Kolhapur","Community Health Center / General healthcare",Open 24 Hours,4,83,"₹400 - ₹800",Yes Available
+44,Hospital,North Star Super Specialty Hospital,"Padamala, Kolhapur","Orthopedics / Super Specialty",Open 24 Hours,4.7,532,"₹100 - ₹250",Yes Available
+45,Hospital,Diamond Hospital,"Ramanmala, Kolhapur",General Hospital,Open 24 Hours,3.3,408,"₹300 - ₹600",Yes Available
+46,Hospital,Sanghavi Multispeciality Hospital,"Sanghavi Hospital, Kolhapur",Multispeciality,Open 24 Hours,4.8,34,"₹300 - ₹500",Yes Available
+47,Hospital,Isolation Hospital,Datta Colony Kolhapur,Isolation / Hospital Care,Open 24 Hours,4,49,"₹100 - ₹250",Yes Available
+48,Hospital,Gholape Hospital,"Kedar Plaza, Kolhapur",General Hospital,Open 24 Hours,4.2,17,"₹100 - ₹250",Yes Available
+49,Hospital,Purvapunyai Hospital,Ujalaiwadi,General Hospital,Open 24 Hours,4.1,18,"₹300 - ₹600",Yes Available
+50,Hospital,Prime Hospital,Shastri Nagar Kolhapur,Multispeciality Hospital,Open 24 Hours,4.9,80,"₹100 - ₹250",Yes Available
+51,Clinic,Kadam Clinic,"Y.P. Powar Nagar, Kolhapur","General Physician / Family Doctor",Open 24 Hours,4.3,3,"₹100 - ₹250",Yes Available
+52,Clinic,Spandan Homeopathy Hospital,"Rajarampuri, Kolhapur",Homeopathy Specialist,11:00am-9:00pm,4.9,354,"₹300 - ₹600",Not Available
+53,Clinic,Dr. Wagle's Shraddha Netralay & Clinic,"Rajarampuri, Kolhapur","Ophthalmologist / Eye Specialist",11:00am-8:30pm,4.8,23,"₹300 - ₹600",Not Available
+54,Clinic,Orodontics,"Tarabai Park, Kolhapur","Orthodontist / Dental Specialist",11:00am-8:00pm,4.8,12,"₹300 - ₹600",Not Available
+55,Clinic,Star Clinic,"Sambhaji Nagar, Kolhapur","General Physician / Family Doctor",10:00am-10:00pm,4.9,48,"₹100 - ₹250",Not Available
+56,Clinic,Parasnath Speciality Clinic,"Tarabai Park, Kolhapur","Knee & Spine Specialist",10:00am-7:00pm,5,54,"₹300 - ₹600",Not Available
+57,Clinic,Knee & Spine Clinic,"Tarabai Park, Kolhapur",Orthopedic Specialist,10:00am-7:00pm,5,54,"₹300 - ₹600",Not Available
+58,Clinic,Shinde Brothers Clinic,"Sambhaji Nagar, Kolhapur","General Physician / Family Doctor",10:00am-9:00pm,5,1,"₹100 - ₹250",Not Available
+59,Clinic,Sisal Clinic,"C Ward, Kolhapur","General Physician / Family Doctor",10:00am-7:00pm,5,92,"₹100 - ₹250",Not Available
+60,Clinic,Shree Siddhivinayak Clinic,"Mukt Sainik Colony, Kolhapur","General Physician / Family Doctor",10:00am-5:30pm,5,65,"₹100 - ₹250",Not Available
+61,Clinic,Soham Clinic,"Sambhaji Nagar, Kolhapur","General Physician / Family Doctor",8:30am-1:00pm,5,1,"₹100 - ₹250",Not Available
+62,Clinic,Renuka Clinic,"Ramanand Nagar, Kolhapur","General Physician / Family Doctor",9:00am-1:30pm,5,11,"₹100 - ₹250",Not Available
+63,Clinic,Shifa Clinic,Vikramnagar Kolhapur,"General Physician / Family Doctor",9:00am-10:30pm,5,16,"₹100 - ₹250",Not Available
+64,Clinic,Mitram Ayurved Multispeciality Clinic & Panchakarm Center,"Y.P. Powar Nagar, Kolhapur","Ayurveda & Panchakarma Specialist",10:00am-8:00pm,4.9,453,"₹200 - ₹500",Not Available
+65,Clinic,Tara Clinic,"Laxmipuri, Kolhapur","General Physician / Family Doctor",10:30am-8:00pm,5,3,"₹100 - ₹250",Not Available
+66,Clinic,La aconfidence Derma Clinic,"Tarabai Park, Kolhapur","Dermatologist / Skin & Hair Specialist",10:30am-8:00pm,4.9,98,"₹300 - ₹600",Not Available
+67,Clinic,Saish Clinic,"Mangalwar Peth, Kolhapur","General Physician / Family Doctor",10:00am-8:00pm,4.9,10,"₹100 - ₹250",Not Available
+68,Clinic,Just Smile Dental Clinic,"Nagalapark, Kolhapur","Dentist / Dental Care Specialist",10:00am-8:30pm,4.9,373,"₹300 - ₹1,000",Not Available
+69,Clinic,Kalpataru Ayurvedic Clinic,"Tarabai Park, Kolhapur",Ayurveda Specialist,9:30am-8:00pm,4.9,90,"₹200 - ₹500",Not Available
+70,Clinic,Om Clinic,"New Palace Road, Kolhapur",Medical Clinic,5:00-9:30 PM,5,1,N/A,Not Available
+71,Clinic,Dr Rohan Patil General Medicine Clinic,"Tarabai Park, Kolhapur",General Medicine,5:00-8:00 PM,4.8,40,N/A,Not Available
+72,Clinic,Gangamai Clinic,"Sai Ganesh Colony, Kolhapur","General Physician / Family Doctor",10:00am-10:00pm,5,5,"₹100 - ₹250",Not Available
+73,Clinic,Vasant Clinic,"Kolekar Tikati, Kolhapur",Medical Clinic,9:00am-9:00pm,5,2,N/A,Not Available
+74,Clinic,Narayani Clinic,"Rajarampuri, Kolhapur",Medicine Clinic,6:00am-10:00pm,4.8,4,N/A,Not Available
+75,Clinic,shrita Clinic,"Tarabai Park, Kolhapur","General, Dental, Ayurveda, Yoga & Panchakarma",10:00am-10:00pm,5,26,"₹100 - ₹250",Not Available
+76,Diagnostic Center,Nirnay Diagnostic Center,"Arihanr Chamber, Kolhapur",Radiology / Diagnostic Center,9:00am-6:00pm,2.7,7,"₹300 - ₹1,000",Not Available
+77,Diagnostic Center,Nexus Diagnostic Center,"New Shahupuri, Kolhapur",Diagnostic Center,Open 24 Hours,N/A,N/A,"₹300 - ₹800",Not Available
+78,Diagnostic Center,Tulsi Diagnostic Center and Pathology Lab,Mangalwar Peth,Pathology / Diagnostic Tests,8 AM-8 PM,4.8,13,"₹300 - ₹800",Not Available
+79,Diagnostic Center,Prime Diagnostic Center,Shahupuri,Diagnostic / Sonography,N/A,3,21,"₹500 - ₹1,500",Not Available
+80,Diagnostic Center,Sun Diagnostics,Rankala,Pathology / Diagnostic Tests,Open 24 Hours,4.2,49,"₹300 - ₹800",Not Available
+81,Diagnostic Center,Sai Diagnostic Centre And Sai Scans,Shahupuri,Diagnostic Imaging / MRI / CT / Sonography,9 AM-7 PM,3.4,255,"₹1,000 - ₹5,000",Not Available
+82,Diagnostic Center,Shashwat Diagnostic Centre,Uttareshwar Peth,Diagnostic Center,8:30 AM-6 PM,5,73,"₹300 - ₹800",Not Available
+83,Diagnostic Center,Krsnaa Diagnostic Center,"Kadamwadi, Kolhapur",Diagnostic / Medical Imaging,Open 24 Hours,4.8,2635,"₹500 - ₹2,000",Not Available
+84,Diagnostic Center,Disha Diagnostic Center,"Behind CPR, Kolhapur",Diagnostic / Sonography / Pathology,8:00am-6:00pm,4.5,419,"₹300 - ₹1,000",Not Available
+85,Diagnostic Center,Abhipray Diagnostic Center,"Rajarampuri, Kolhapur",Radiology / Sonography / Fetal Medicine,Open 24 Hours,4.9,2007,"₹500 - ₹2,000",Not Available
+86,Diagnostic Center,Nishkarsh Diagnostic Center,"Sambhaji Nagar, Kolhapur",Diagnostic Center,8:00am-7:00pm,4.7,765,"₹300 - ₹800",Not Available
+87,Diagnostic Center,Axis Security Diagnostics Center,"Laxmipuri, Kolhapur",Diagnostic Center,Open 24 Hours,2.9,51,"₹300 - ₹800",Not Available
+88,Diagnostic Center,Kolhapur Diagnostic Center,"Rajarampuri, Kolhapur",Diagnostic / Sonography,9:15am-7:00pm,2,17,"₹300 - ₹800",Not Available
+89,Diagnostic Center,Precision Diagnostic Center,"Rajarampuri, Kolhapur",Diagnostic / Sonography,9:00am-5:00pm,3.2,38,"₹300 - ₹800",Not Available
+90,Diagnostic Center,Apollo Diagnostic Center,"Tarabai Park, Kolhapur",Pathology / Diagnostic Tests,6:30am-8:00pm,4.4,15,"₹300 - ₹1,000",Not Available
+91,Diagnostic Center,Lupin Diagnostic Center,"Kalamba, Kolhapur","Hematology / Biochemistry / Clinical Pathology / Immunoassay",7:30am-7:30pm,5,8,"₹500 - ₹2,000",Not Available
+92,Diagnostic Center,Apex Imaging Center,"Kavlapur, Kolhapur",Diagnostic Imaging,9:00am-6:00pm,5,44,"₹300 - ₹800",Not Available
+93,Diagnostic Center,Shrutika Diagnostic Center,Laxmipuri,Diagnostic Center,Open 24 Hours,2.5,101,"₹300 - ₹800",Not Available
+94,Diagnostic Center,Mrinmay Diagnostic Laboratory,Shahupuri,Pathology / Laboratory Tests,Open 24 Hours,4.5,24,"₹300 - ₹800",Not Available
+95,Diagnostic Center,Eureka Diagnostic Centre,Laxmipuri,Diagnostic Center,9 AM-6 PM,2.9,50,"₹300 - ₹800",Not Available
+96,Diagnostic Center,Manipal TRUtest Diagnostic Center,"Rajarampuri, Kolhapur",Pathology / Diagnostic Tests,8:00am-8:00pm,4.3,33,"₹300 - ₹800",Not Available
+97,Diagnostic Center,Thyrocare Lab Diagnostic Center,"Vijayanagar Colony, Kolhapur",Pathology / Laboratory Tests,7:00am-8:00pm,5,1,"₹500 - ₹2,000",Not Available
+98,Diagnostic Center,Neuberg Star Imaging & Labs,"Rajarampuri, Kolhapur",Radiology / Medical Imaging / Pathology,7:00am-7:30pm,4.9,8,"₹500 - ₹2,000",Not Available
+99,Diagnostic Center,CITY Diagnostic Center,"Hanbar Galli, Kagal",Diagnostic Imaging,9:00am-6:00pm,2.8,18,"₹500 - ₹2,000",Not Available
+100,Diagnostic Center,Dhoshi Diagnostic Center,"Behind CPR, Kolhapur",Orthopedic and Endocrine Centre,9:00am-7:00pm,4.2,63,"₹300 - ₹800",Not Available
